@@ -24,6 +24,10 @@ Project is created with :
 
 This application displays standard business hours (9am-5pm).
 
+The current hour is displayed in red. When the hour has passed, the boxes will turn to grey. The color green shows what needs to be done at later hours.
+
+Clicking on the buttons will save the input to Local Storage.
+
 ## Author
 
 - Duc-Hoang Do
