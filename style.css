@@ -41,15 +41,15 @@
 
   .past {
     background-color: grey;
-    color: white;
+    color:black;
   }
   
   .present {
     background-color: red;
-    color: white;
+    color: black;
   }
   
   .future {
     background-color: green;
-    color: white;
+    color: black;
   }
