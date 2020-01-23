@@ -68,17 +68,14 @@ $(document).ready(function() {
 		saveInput("content9", input9.value)
 	});
 
-    var now = new Date().getHours();
-	
-	function addTimeClass(noteNum, start, end){
-		if (now > start) {
-			$(noteNum).addClass("past");
-		}	
-		else if (now >= start && now < end) {
-			$(noteNum).addClass("present");
-		}
-		else if (now < end) {
-			$(noteNum).addClass("future");
+	function addTimeClass(noteNum, timeSlot) {
+		var now = moment().hour();
+		if (now > timeSlot) {
+		  $(noteNum).addClass("past");
+		} else if (now === timeSlot) {
+		  $(noteNum).addClass("present");
+		} else {
+		  $(noteNum).addClass("future");
 		}
 	}
 	
